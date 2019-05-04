@@ -1,23 +1,4 @@
-.repository{
-  font-size: 20px;
-  font-family: monospace;
-  font-weight: bold;
-}
+
 img{
   border-radius: 10px;
-}
-.panel-body{
-  border:0.5px solid grey;
-  border-radius: 10px;
-  padding:10px;
-  margin-bottom: 10px;
-}
-.names{
-  font-size: 30px;
-  font-weight: bolder;
-  font-family: monospace;
-  margin-left: 5px;
-}
-.list-group-items{
-  margin-left: 5px;
 }

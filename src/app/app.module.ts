@@ -4,13 +4,17 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ProfileService } from './services/profile.service';
 import { MyProfileComponent } from './my-profile/my-profile.component';
+import { ReposComponent } from './repos/repos.component';
 import { DateCountPipe } from './date-count.pipe';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     MyProfileComponent,
+    ReposComponent,
     DateCountPipe
   ],
   imports: [
@@ -18,7 +22,7 @@ import { DateCountPipe } from './date-count.pipe';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [ProfileService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

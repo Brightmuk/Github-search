@@ -26,27 +26,8 @@
             </p>
             <br>
             <p><a href="{{user.html_url}}" target="_blank" class="btn btn-success btn-sm" id="view"> View profile on Github &nbsp; <span class="glyphicon glyphicon-share-alt"></span></a></p>
-            <br>
-            <div class="panel panel-success panel">
-              <div class="panel-heading heading">
-                <h3 class="panel-title" class="repos">Repositories</h3>
-              </div>
-              <div class="panel-body" *ngFor="let repo of repositoryService.repo ; let i = index">
-                <p class="clearfix">
-                  <span class="repository"> {{repositoryService.repo[i].name}} </span>
-                </p>
-                <p class="description">{{repositoryService.repo[i].description}}</p>
-
-                <p class="creation-date"><b class="dates">Date created:</b> &nbsp;  {{repositoryService.repo[i].created_at|date}}</p>
-
-                <p class="update-date"><b class="dates">Updated on:</b> &nbsp;   <b>{{repositoryService.repo[i].updated_at|date}}</b></p>
-                <br>
-                <a href="{{repositoryService.repo[i].html_url}}" target="_blank" class="btn btn-sm btn-danger ">View this project on Github &nbsp;<span class="glyphicon glyphicon-share-alt"></span></a>
-                <br>
-                <br>
-                <a href="{{repositoryService.repo[i].homepage}}" target="_blank" *ngIf="repositoryService.repo[i].homepage" class="btn btn-sm btn-success pull-right buttons">View Deployed Page &nbsp;<span class="glyphicon glyphicon-share-alt"></span></a>
-              </div>
-            </div>
+            
+            <app-repos></app-repos>
           </div>
         </div>
       </div>
