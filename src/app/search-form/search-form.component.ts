@@ -1,22 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 import { ProfileService } from '../services/profile.service';
 import { Search } from '../search';
-import{User} from '../user';
+import { User } from '../user';
+import { HttpClient } from '@angular/common/http';
 import { Repos } from '../repos';
-import{HttpClient} from '@angular/common/http';
 
 @Component({
   selector: 'app-search-form',
   templateUrl: './search-form.component.html',
   styleUrls: ['./search-form.component.css'],
 
-  providers:[ProfileService]
 })
 export class SearchFormComponent implements OnInit {
   newSearch = new Search('','','',0);
   public username ='';
   repos:Repos;
   user:User;
+
 
   submitUser(name){
     this.profileService.getProfileInfo(name.value);

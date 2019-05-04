@@ -10,7 +10,6 @@ import { Repos } from '../repos';
 export class ProfileService {
   repos:Repos;
   user:User;
-
   repo;
 
   constructor(private http:HttpClient) {
@@ -18,7 +17,6 @@ export class ProfileService {
      this.repos=new Repos('','','',new Date(),new Date(),'');
 }
 ngOnInit() {
-
 
      this.getProfileInfo();
  }

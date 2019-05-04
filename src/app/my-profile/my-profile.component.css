@@ -1,6 +1,18 @@
+.search{
+  color:white;
+ float:right;
+}
+a{
+  color:white;
+}
+
 
 img{
   border-radius: 10px;
+  width:300px;
+  height:300px;
+  margin-right: 10px;
+
 }
 .names{
   font-size: 30px;

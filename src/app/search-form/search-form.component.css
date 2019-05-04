@@ -4,6 +4,9 @@ img{
   width:300px;
   border:1px solid white;
 }
+#submit{
+  margin-top: 5px;
+}
 .panel-body{
   border:0.5px solid grey;
   border-radius: 6px;
