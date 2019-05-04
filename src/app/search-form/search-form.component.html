@@ -10,20 +10,20 @@
   </form>
 </div>
 <div *ngIf="user">
-
-      <p class="names"><span class="glyphicon glyphicon-user"></span> &nbsp; {{user.login}} &nbsp;<small>{{user.name}}</small></p>
-
+<p class="names"><span class="glyphicon glyphicon-user"></span> &nbsp; {{user.login}} &nbsp;<small>{{user.name}}</small></p>
     <div class="panel-body" id="body">
       <div class="row">
+
         <div class="col-sm-3">
           <img src="{{user.avatar_url}}" class="img-circle" alt="">
+          <li class="list-group-item" *ngIf="user.created_at" id="emailocation">Account created on: <b>{{user.created_at | date}}</b></li>
+          <li class="list-group-item" *ngIf="user.email" id="emailocation">Email-Address: <a href="{{user.email}}" target="_blank"> {{user.email}} </a></li>
+          <li class="list-group-item" *ngIf="user.location" id="emailocation">Location: <b>{{user.location}}</b></li>
+
+
         </div>
         <div class="col-sm-3">
-          <ul class="list-group" id="email">
-            <li class="list-group-item" *ngIf="user.email" id="emailocation">Email-Address: <a href="{{user.email}}" target="_blank"> {{user.email}} </a></li>
-            <li class="list-group-item" *ngIf="user.location" id="emailocation">Location: <b>{{user.location}}</b></li>
-            <li class="list-group-item" *ngIf="user.created_at" id="emailocation">Account created on: <b>{{user.created_at | date}}</b></li>
-          </ul>
+          
         </div>
         <div class="col-sm-4" id="repos-part">
           <div>
