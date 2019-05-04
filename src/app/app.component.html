@@ -1,10 +1,16 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div class="container-fluid">
-  <div class="jumbotron">
-<div style="text-align:center">
-  <h1>Github Search</h1>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+
+      <a class="navbar-brand" href="#">Github Search</a><br>
+
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+      <li><a routerLink='/search-form' routerLinkActive='active'>Search</a></li>
+       <li><a routerLink='/my-profile' routerLinkActive='active'>My profile</a></li><br>
+
   </div>
-</div>
-<app-my-profile></app-my-profile>
+</nav>
+
 <router-outlet></router-outlet>
-<div>

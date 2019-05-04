@@ -19,6 +19,7 @@ export class ProfileService {
 }
 ngOnInit() {
 
+
      this.getProfileInfo();
  }
 
