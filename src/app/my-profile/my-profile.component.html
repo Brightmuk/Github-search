@@ -1,11 +1,7 @@
 <div *ngIf="user">
-
-
       <div class="row">
         <div class="col-sm-3">
           <img src="{{user.avatar_url}}" class="img-circle" alt="">
-        </div>
-        <div class="col-sm-3">
           <ul class="list-group" id="email">
             <p class="names"><span class="glyphicon glyphicon-user"></span>  {{user.login}} <small>{{user.name}}</small></p>
             <li class="list-group-item" *ngIf="user.email" id="emailocation">Email-Address: <a href="{{user.email}}" target="_blank"> {{user.email}} </a></li>
@@ -13,7 +9,10 @@
             <li class="list-group-item" *ngIf="user.created_at" id="emailocation">Account created on: <b>{{user.created_at | date}}</b></li>
           </ul>
         </div>
-        <div class="col-sm-4" id="repos-part">
+        <div class="col-sm-2">
+
+        </div>
+        <div class="col-sm-5" id="repos-part">
           <div>
             <p>
               <span class="label label-info" id="labels">{{user.followers}} Followers</span>
@@ -26,7 +25,7 @@
             </p>
             <br>
             <p><a href="{{user.html_url}}" target="_blank" class="btn btn-success btn-sm" id="view"> View profile on Github &nbsp; <span class="glyphicon glyphicon-share-alt"></span></a></p>
-            
+
             <app-repos></app-repos>
           </div>
         </div>

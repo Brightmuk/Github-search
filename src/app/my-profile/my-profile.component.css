@@ -2,3 +2,12 @@
 img{
   border-radius: 10px;
 }
+.names{
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: monospace;
+  margin-left: 5px;
+}
+.col-sm-5{
+  margin-left: 10px;
+}

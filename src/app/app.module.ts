@@ -8,19 +8,22 @@ import { ProfileService } from './services/profile.service';
 import { MyProfileComponent } from './my-profile/my-profile.component';
 import { ReposComponent } from './repos/repos.component';
 import { DateCountPipe } from './date-count.pipe';
-
+import { SearchFormComponent } from './search-form/search-form.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     MyProfileComponent,
     ReposComponent,
-    DateCountPipe
+    DateCountPipe,
+    SearchFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [ProfileService],
   bootstrap: [AppComponent]

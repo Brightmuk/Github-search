@@ -18,7 +18,7 @@ export class ProfileService {
      this.repos=new Repos('','','',new Date(),new Date(),'');
 }
 ngOnInit() {
-     
+
      this.getProfileInfo();
  }
 
