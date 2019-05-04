@@ -1,15 +1,13 @@
 <div *ngIf="user">
-  <div class="panel panel-default">
-    <div class="panel-heading" id="heading">
-      <p class="names"><span class="glyphicon glyphicon-user"></span> &nbsp; {{user.login}} &nbsp;<small>({{user.name}})</small></p>
-    </div>
-    <div class="panel-body" id="body">
+
+
       <div class="row">
         <div class="col-sm-3">
           <img src="{{user.avatar_url}}" class="img-circle" alt="">
         </div>
         <div class="col-sm-3">
           <ul class="list-group" id="email">
+            <p class="names"><span class="glyphicon glyphicon-user"></span>  {{user.login}} <small>{{user.name}}</small></p>
             <li class="list-group-item" *ngIf="user.email" id="emailocation">Email-Address: <a href="{{user.email}}" target="_blank"> {{user.email}} </a></li>
             <li class="list-group-item" *ngIf="user.location" id="emailocation">Location: <b>{{user.location}}</b></li>
             <li class="list-group-item" *ngIf="user.created_at" id="emailocation">Account created on: <b>{{user.created_at | date}}</b></li>
@@ -38,7 +36,7 @@
                   <span class="repository"> {{repositoryService.repo[i].name}} </span>
                 </p>
                 <p class="description">{{repositoryService.repo[i].description}}</p>
-                <br>
+
                 <p class="creation-date"><b class="dates">Date created:</b> &nbsp;  {{repositoryService.repo[i].created_at|date}}</p>
 
                 <p class="update-date"><b class="dates">Updated on:</b> &nbsp;   <b>{{repositoryService.repo[i].updated_at|date}}</b></p>
@@ -52,5 +50,4 @@
           </div>
         </div>
       </div>
-    </div>
   </div>
