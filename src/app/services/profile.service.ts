@@ -18,7 +18,6 @@ export class ProfileService {
 }
 
 
-
   getProfileInfo(username){
     interface ApiResponse{
       name:string;

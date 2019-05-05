@@ -32,3 +32,23 @@ img{
   font-family: URW Chancery L, cursive;
   font-size: 20px;
 }
+#repo-part{
+  border:2px solid #F0FFF0;
+  border-radius: 5px;
+  height: 300px;
+ background-color: #F0FFF0;
+}
+h3{
+  font-size: 40px;
+  text-align: center;
+  background-color:#F0FFF0;
+  width:100%;
+  padding:10px;
+}
+.btn1{
+  background-color: #B0E0E6;
+  padding:7px;
+  border-radius: 5px;
+  margin:5px;
+  color:black;
+}
