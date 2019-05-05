@@ -16,10 +16,7 @@ export class ProfileService {
     this.user=new User('','','',0,'','','','','','',new Date());
      this.repos=new Repos('','','',new Date(),new Date(),'');
 }
-ngOnInit() {
 
-     this.getProfileInfo();
- }
 
 
   getProfileInfo(username){
