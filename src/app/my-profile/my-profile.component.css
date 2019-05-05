@@ -1,6 +1,9 @@
 .search{
   color:white;
- float:right;
+  float:right;
+  background-color: #F0FFF0;
+  height:300px;
+  padding:20px;
 }
 a{
   color:white;
@@ -22,4 +25,14 @@ img{
 }
 .col-sm-5{
   margin-left: 10px;
+}
+.repo{
+margin-left: 100px;
+margin-top:50px;
+}
+#repo-part{
+  border:2px solid #F0FFF0;
+  border-radius: 5px;
+  height: 300px;
+ background-color: #F0FFF0;
 }
