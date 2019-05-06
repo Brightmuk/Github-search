@@ -46,7 +46,7 @@
   <div class="col-md-8">
                 <h3>Repositories</h3>
 
-                <div class="panel-body" *ngFor="let repo of repositoryService.repo ; let i = index">
+                <div class="panel-body" *ngFor="let repo of repositoryService.repo ; let i = index" appHover>
                   <p class="clearfix">
                     <span class="repository"> {{repositoryService.repo[i].name}} </span>
                   </p>
